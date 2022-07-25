@@ -1,10 +1,10 @@
-img/
-skin/
-vscode/
+/img/
+/skin/
+.vscode/
 index.html
 hosting_index.html
-A_ksm/
-popo_ksm/
-jpo/
-A_ksm/
+/A_ksm/
+/popo_ksm/
+/jpo/
+/A_ksm/
 
