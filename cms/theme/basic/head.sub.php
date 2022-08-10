@@ -63,6 +63,9 @@ if($config['cf_add_meta'])
     <meta property="og:image" content="/cms/img/og.jpg" />
     <meta name="msapplication-TileImage" content="/cms/img/og.jpg" size="270x270" />
 
+
+    <!-- xeicon -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 <!-- 폰트어썸 -->
 <script src="https://kit.fontawesome.com/32795a7b7a.js" crossorigin="anonymous"></script>
 <!-- Scada폰트 -->
@@ -86,6 +89,7 @@ if($config['cf_add_meta'])
 
 
 <link rel="stylesheet" href="/cms/theme/basic/css/default.css?ver=<?php echo time(); ?>">
+<link rel="stylesheet" href="/cms/theme/basic/css/teacher/TC.css?ver=<?php echo time(); ?>">
 <!--[if lte IE 8]>
 <script src="<?php echo G5_JS_URL ?>/html5.js"></script>
 <![endif]-->
@@ -129,13 +133,20 @@ if(G5_IS_MOBILE) {
 if(!defined('G5_IS_ADMIN'))
     echo $config['cf_add_script'];
 ?>
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!-- 스와이퍼 -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<!-- 카카오 라이브러리 -->
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=APIKEY&libraries=services"></script>
+<!-- 카카오API -->
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=36803296f48346760b666e5dec4b06c1"></script>
 <!-- 제이쿼리 2.2.4 -->
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <!-- 나의 CSS/JS-->
 <link rel="stylesheet" href="/cms/css/KSM/ksm.css.css?var= <?php echo time(); ?>">
 <script src="/cms/js/ksm/js/ksm.js?ver= <?php echo time(); ?>"></script>
+<script src="/cms/theme/basic/css/teacher/jTC.js?ver=<?php echo time(); ?>"></script>
 
 
 </head>

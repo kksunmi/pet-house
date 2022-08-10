@@ -49,7 +49,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                     $add_class = (isset($row['sub']) && $row['sub']) ? 'gnb_al_li_plus' : '';
                 ?>
                 <li class="gnb_1dli d-none d-md-block" >
-                    <a href="<?php echo $row['me_link']; ?>" target="_<?php echo $row['me_target']; ?>" class="gnb_1da"><?php echo $row['me_name'] ?></a>
+                    <a href="<?php echo $row['me_link']; ?>" target="_<?php echo $row['me_target']; ?>" class="gnb_1da wght-500"><?php echo $row['me_name'] ?></a>
                     <?php
                     $k = 0;
                     foreach( (array) $row['sub'] as $row2 ){
@@ -85,7 +85,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                     foreach( $menu_datas as $row ){
                     ?>
                     <li class="gnb_al_li border-0 py-4">
-                        <a href="<?php echo $row['me_link']; ?>" target="_<?php echo $row['me_target']; ?>" class="gnb_al_a"><?php echo $row['me_name'] ?></a>
+                        <a href="<?php echo $row['me_link']; ?>" target="_<?php echo $row['me_target']; ?>" class="gnb_al_a wght-200"><?php echo $row['me_name'] ?></a>
                         <?php
                         $k = 0;
                         foreach( (array) $row['sub'] as $row2 ){
