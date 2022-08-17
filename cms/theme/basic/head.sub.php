@@ -58,7 +58,7 @@ if($config['cf_add_meta'])
     <meta property="og:site_name" content="부트스트랩을 활용한 포트폴리오가 주력입니다" />
     <meta property="og:url" content="happycast88.cafe.com/cms"/>
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="협업이 가능한 퍼블리셔" />
+    <meta property="og:title" content="디자인도 가능한 퍼블리셔" />
     <meta property="og:description" content="김선미의 포트폴리오 소개 페이지" />
     <meta property="og:image" content="/cms/img/og.jpg" />
     <meta name="msapplication-TileImage" content="/cms/img/og.jpg" size="270x270" />
@@ -78,6 +78,11 @@ if($config['cf_add_meta'])
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 <!-- 에스코어드림 -->
 <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet">
+<!-- Animate.css -->
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 <!-- 스와이퍼 플러그인 -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 <!-- AOS -->

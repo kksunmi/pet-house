@@ -21,8 +21,10 @@ include_once(G5_THEME_PATH.'/head.php');
     <?php //echo latest('silde','mainbanner',3,100)?>
     <div id="splide2" class='d-flex flex-column justify-content-cetner align-items-center'>
         <div class="text_content text-center">
-            <h2>펫하우스와 함께하는<br>특별한 시간 여행</h2>
-            <input type="button" value="바로가기">
+            <h2 class="animate__animated animate__lightSpeedInLeft">펫하우스와 함께하는<br>특별한 시간 여행</h2>
+            <input type="button" value="바로가기" onclick="location.href='#buth3'"; class="xi-long-arrow-right">
+
+            <!-- <i class="xi-long-arrow-right"></i> -->
         </div>
     </div>
 <!-- 시작끝 -->
@@ -53,7 +55,7 @@ include_once(G5_THEME_PATH.'/head.php');
 
     <div id="sctionB">
         <div class="container m-auto rel">
-            <h3 class="wght-500 text-center text-white">STU<br><span class="h3_font">DIO</span></h3>
+            <h3 id="buth3" class="wght-500 text-center text-white">STU<br><span class="h3_font">DIO</span></h3>
             <div class="content_studio d-md-flex align-items-center col-md-12">
                  <div class="contentB_img"data-aos="fade-right"data-aos-duration="1000">
                     <img src="/cms/img/Mask group.png" alt="실내 스튜디오">
@@ -103,10 +105,10 @@ include_once(G5_THEME_PATH.'/head.php');
                     예약금 안내 메세지를 보내드립니다</p>
                 </div>
                 <div class="step_img" data-aos="fade-left">
-                    <img src="/cms/img/step1.jpg" alt="단계 이미지">
+                    <img src="/cms/img/step1.jpg" alt="PC 1단계 이미지">
                 </div>
                 <div class="step_img d-md-none mb" data-aos="fade-left">
-                    <img src="/cms/img/mob 1.jpg" alt="단계 이미지">
+                    <img src="/cms/img/mob 1.jpg" alt="모바일 1단계 이미지">
                 </div>
             </li>  
             <li class="d-md-flex justify-content-between align-items-center row-reverse lef">
@@ -117,10 +119,10 @@ include_once(G5_THEME_PATH.'/head.php');
                     원하는 컨셉을 정합니다.</p>
                 </div>
                 <div class="step_img_left"data-aos="fade-right">
-                    <img src="/cms/img/step2.jpg" alt="단계 이미지">
+                    <img src="/cms/img/step2.jpg" alt="PC 2단계 이미지">
                 </div>
                 <div class="step_img_left d-md-none mb"data-aos="fade-right">
-                    <img src="/cms/img/mob 2.jpg" alt="단계 이미지">
+                    <img src="/cms/img/mob 2.jpg" alt="모바일 2단계 이미지">
                 </div>
             </li> 
             <li class="d-md-flex justify-content-between align-items-center m-auto rig">
@@ -131,10 +133,10 @@ include_once(G5_THEME_PATH.'/head.php');
                     스튜디오 및 거주 공간에서 촬영하기</p>
                 </div>
                 <div class="step_img"data-aos="fade-left">
-                    <img src="/cms/img/step3.jpg" alt="단계 이미지">
+                    <img src="/cms/img/step3.jpg" alt="PC 3단계 이미지">
                 </div>
                 <div class="step_img d-md-none mb"data-aos="fade-left">
-                    <img src="/cms/img/mob 3.jpg" alt="단계 이미지">
+                    <img src="/cms/img/mob 3.jpg" alt="모바일 3단계 이미지">
                 </div>
             </li> 
         </ul>
@@ -225,12 +227,18 @@ include_once(G5_THEME_PATH.'/head.php');
         
             </div>
             <div class="event_img">
-                <img src="/cms/img/event_img.png" alt="">
+                <img src="/cms/img/event_img.png" alt="이벤트 이미지">
             </div>
 
             <div id="event_qa" class="text-left text-white">
                 <div class="event_B text-center ">
                     <h2 class="bg-white">신청방법</h2>
+                </div>
+                <div class="ev_img">
+                    <img src="" alt="">
+                </div>
+                    <div class="ev_img2">
+                    <img src="" alt="">
                 </div>
                 <div class="dlt">
                     <dl class="align-items-center">
@@ -262,35 +270,41 @@ include_once(G5_THEME_PATH.'/head.php');
 
     <div id="event_form">
         <h3 class="text-center text-white">이벤트 신청하기</h3>
-        <form action="">
-            <ul class="text-left text-white"> 
+        <form action="#none">
+            <ul class="text-left text-white m-auto"> 
                 <li class="mb-5">
                     <label for="">이름</label>
                     <input type="text">
                 </li>
                 <li class="mb-5">
                     <label for="">이메일</label>
-                    <input type="email" name="" id="">
+                    <input type="email" name="emli" id="EVemi">
                 </li>
                 <li class="mb-5">
-                    <label for="">연락처</label>
-                    <input type="tel" name="" id="">
+                    <label for="EVteln">연락처</label>
+                    <input type="tel" name="teln" id="EVteln" placeholder="000-0000-0000">
                 </li>
                 <li class="mb-5">
                     <label for="">특별한 사연을 적어주세요</label>
-                    <input type="text">
+                    <input type="text" placeholder="여러분의 사연을 적어주세요">
                 </li>
+
                 <li class="mb-5 d-flex justify-content-between align-items-center border-0">
-                    <input type="checkbox" name="" id="">
+                    <input type="checkbox" name="chxga" id="chxga" class="d-none">
+                    <label for="chxga">
                     <i class="fa-solid fa-chevron-down"></i>
-                    <label for="">개인정보 수집/이용 동의 (필수)</label>
-                    <span>보기</span>
+                    <span>개인정보 수집/이용 동의 (필수)</span>
+                    </label>
+                    <span><a href="#none" class="text-white">보기</a></span>
                 </li>
+                
                 <li class="mb-5 d-flex justify-content-between align-items-center border-0">
-                    <input type="checkbox" name="" id="">
+                    <input type="checkbox" name="svr" id="svr" class="d-none border-0">
+                    <label for="svr">
                     <i class="fa-solid fa-chevron-down"></i>
-                    <label for="">서비스 이용약관 동의 (필수)</label>
-                    <span>보기</span>
+                    <span>서비스 이용약관 동의 (필수)</span>
+                    </label>      
+                    <span><a href="#none" class="text-white">보기</a></span>
                 </li>
                 <li class="text-center border-0">
                     <input type="submit" value="신청하기">
@@ -299,14 +313,38 @@ include_once(G5_THEME_PATH.'/head.php');
         </form>
     </div>
 
+    <div class="layer-bg"></div>
+    <div class="popup">
+        <h2>개인정보이용동의</h2>
+        <p>
+                    ①개인정보의 수집·이용목적
+            예시) 포인트 적립, 입시상담, 급여관리, ...<br>
+            <br>
+            ②수집하려는 개인정보의 항목
+            예시) 성명, 번화번호, 주소, 이메일, 학년, ...<br>
+            <br>
+            ③개인정보의 보유 및 이용기간(근거법률)
+            예시)1년, 수강기간, 퇴사후 3년, ...<br>
+            <br>
+            거래기록
+            5년(전자상거래 등에서의 소비자 보호에 관한 법률)<br>
+            <br>
+            ④동의를 거부할 수 있으며, 예시)동의 거부시 ○○서비스가 제공되지 않습니다.<br>
+        </p>
+        <div class="button">
+            <a href="#none" class="close xi-close-square">
+                닫기
+            </a>
+        </div>
+    </div>
 
     <div id="fth">
         <div class="container text-white">
             <h3 class="text-center">찾아오시는길</h3>
             <div class="d-md-flex justify-content-between align-items-center">
-                <div class="m-auto wght-350 text-center text-md-left">
+                <div class="m-auto wght-350 text-md-left dmd">
                     <dl>
-                        <dt>(우편번호 : 05610)</dt>
+                        <dd>(우편번호 : 05610)</dd>
                         <dt>주소</dt>
                         <dd>서울특별시 송파구 송파대로49길 29</dd>
                         <dt>TEL</dt>
@@ -318,28 +356,20 @@ include_once(G5_THEME_PATH.'/head.php');
                     </dl>
                 </div>
 
-                    <div id="map" style="width:590px;height:420px;"></div>
+                    <div id="map" style="width:100%;height:420px;"></div>
                     <!-- 카카오API -->
                     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=36803296f48346760b666e5dec4b06c1"></script>
                     <script>
                     var container = document.getElementById('map');
                     var options = {
                         center: new kakao.maps.LatLng(37.5067147, 127.1015772),
-                        level: 3
+                        level: 4
                     };
 
                     var map = new kakao.maps.Map(container, options);
 
-                    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-                    mapOption = { 
-                        center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
-                        level: 3 // 지도의 확대 레벨
-                    };
-
-                    var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
-
                     // 마커가 표시될 위치입니다 
-                    var markerPosition  = new kakao.maps.LatLng(33.450701, 126.570667); 
+                    var markerPosition  = new kakao.maps.LatLng(37.506714, 127.1015772); 
 
                     // 마커를 생성합니다
                     var marker = new kakao.maps.Marker({
